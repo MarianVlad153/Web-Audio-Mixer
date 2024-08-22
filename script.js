@@ -69,7 +69,7 @@ function initChannel(index) {
 function setupSliders(channel, x, y) {
     const spacing = 30;
 
-    channel.controls.ampSlider = createSlider(0, 1, 0.5, 0.01);
+    channel.controls.ampSlider = createSlider(0, 2, 1, 0.01);
     setupSlider(channel.controls.ampSlider, x + 62, y + 45, '', (val) => channel.song.amp(val), false, 120);
     channel.controls.ampSlider.class("aslider slider");
 
